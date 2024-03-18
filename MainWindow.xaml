@@ -1,0 +1,20 @@
+﻿<Window x:Class="PraktEntityVIew.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PraktEntityVIew"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="GridInfo" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Employee_Name}" Header="Имя"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Employee_Surname }" Header="Отчество"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Employee_MiddleName }" Header="Фамилия"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Post.Post_Name}" Header="Должность"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Post.Sallary}" Header="Зарплата"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
